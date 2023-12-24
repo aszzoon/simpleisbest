@@ -1,6 +1,6 @@
 package com.example.blog.springbootdeveloper.controller;
 
-import com.example.blog.springbootdeveloper.domain.Article;
+import com.example.blog.springbootdeveloper.entity.Article;
 import com.example.blog.springbootdeveloper.dto.ArticleListViewResponse;
 import com.example.blog.springbootdeveloper.dto.ArticleViewResponse;
 import com.example.blog.springbootdeveloper.service.BlogService;

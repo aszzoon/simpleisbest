@@ -4,7 +4,7 @@ const deleteButton = document.getElementById('delete-btn');
 if (deleteButton) {
     deleteButton.addEventListener('click', event => {
         let id = document.getElementById('article-id').value;
-        fetch(`/api/articles/${id}`,
+        fetch(`/api/article/${id}`,
             {
             method: 'DELETE'
         })

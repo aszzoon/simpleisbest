@@ -1,6 +1,6 @@
 package com.example.blog.springbootdeveloper.dto;
 
-import com.example.blog.springbootdeveloper.domain.Article;
+import com.example.blog.springbootdeveloper.entity.Article;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 

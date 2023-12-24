@@ -1,6 +1,6 @@
 package com.example.blog.springbootdeveloper.service;
 
-import com.example.blog.springbootdeveloper.domain.Article;
+import com.example.blog.springbootdeveloper.entity.Article;
 import com.example.blog.springbootdeveloper.dto.AddArticleRequest;
 import com.example.blog.springbootdeveloper.dto.UpdateArticleRequest;
 import com.example.blog.springbootdeveloper.repository.BlogRepository;

@@ -1,7 +1,7 @@
 package com.example.blog.springbootdeveloper.controller;
 
 
-import com.example.blog.springbootdeveloper.domain.Article;
+import com.example.blog.springbootdeveloper.entity.Article;
 import com.example.blog.springbootdeveloper.dto.AddArticleRequest;
 import com.example.blog.springbootdeveloper.dto.ArticleResponse;
 import com.example.blog.springbootdeveloper.dto.UpdateArticleRequest;
