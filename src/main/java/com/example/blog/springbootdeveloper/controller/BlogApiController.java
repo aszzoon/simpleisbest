@@ -48,19 +48,19 @@ public class BlogApiController {
                 .body(new ArticleResponse(article));
     }
 
-//    @DeleteMapping("/api/article/{id}")
-//    public ResponseEntity<Void> deleteArticle(@PathVariable Long id) {
-//        blogService.delete(id);
-//
-//        return ResponseEntity.ok()
-//                .build();
-//    }
-
-    @DeleteMapping("/articles/{id}")
+    @DeleteMapping("/api/article/{id}")
     public ResponseEntity<Void> deleteArticle(@PathVariable Long id) {
         blogService.delete(id);
-        return ResponseEntity.noContent().build();
+
+        return ResponseEntity.ok()
+                .build();
     }
+
+//    @DeleteMapping("/articles/{id}")
+//    public ResponseEntity<Void> deleteArticle(@PathVariable Long id) {
+//        blogService.delete(id);
+//        return ResponseEntity.noContent().build();
+//    }
 
     @PutMapping("/api/articles/{id}")
     public ResponseEntity<Article> updateArticle(@PathVariable long id,
