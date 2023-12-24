@@ -1,4 +1,4 @@
-package com.example.blog.springbootdeveloper.dto;
+package com.example.blog.dto;
 
 
 import lombok.AllArgsConstructor;

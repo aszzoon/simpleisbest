@@ -1,11 +1,11 @@
-package com.example.blog.springbootdeveloper.controller;
+package com.example.blog.controller;
 
 
-import com.example.blog.springbootdeveloper.entity.Article;
-import com.example.blog.springbootdeveloper.dto.AddArticleRequest;
-import com.example.blog.springbootdeveloper.dto.ArticleResponse;
-import com.example.blog.springbootdeveloper.dto.UpdateArticleRequest;
-import com.example.blog.springbootdeveloper.service.BlogService;
+import com.example.blog.dto.AddArticleRequest;
+import com.example.blog.dto.ArticleResponse;
+import com.example.blog.dto.UpdateArticleRequest;
+import com.example.blog.entity.Article;
+import com.example.blog.service.BlogService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

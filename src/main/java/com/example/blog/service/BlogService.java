@@ -1,9 +1,9 @@
-package com.example.blog.springbootdeveloper.service;
+package com.example.blog.service;
 
-import com.example.blog.springbootdeveloper.entity.Article;
-import com.example.blog.springbootdeveloper.dto.AddArticleRequest;
-import com.example.blog.springbootdeveloper.dto.UpdateArticleRequest;
-import com.example.blog.springbootdeveloper.repository.BlogRepository;
+import com.example.blog.dto.AddArticleRequest;
+import com.example.blog.entity.Article;
+import com.example.blog.dto.UpdateArticleRequest;
+import com.example.blog.repository.BlogRepository;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
