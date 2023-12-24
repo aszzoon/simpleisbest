@@ -2,21 +2,22 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>블로그 글</title>
+    <title>SIMPLE IS BEST</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 </head>
 
 <body>
 
 <div class="p-5 mb-5 text-center</> bg-light">
-    <h1 class="mb-3">My Blog</h1>
-    <h4 class="mb-3">블로그에 오신 것을 환영합니다.</h4>
+    <h1 class="mb-3">Simple is best</h1>
+    <h4 class="mb-3">심플 이즈 베스트</h4>
 </div>
 
 <div class="container">
     <div class="row">
         <div class="col-lg-8">
             <article>
+
                 <input type="hidden" id="article-id" th:value="${article.id}">
                 <header class="mb-4">
                     <h1 class="fw-bolder mb-1" th:text="${article.title}"></h1>
@@ -27,16 +28,16 @@
                     <p class="fs-5 mb-4" th:text="${article.content}"></p>
                 </section>
 
-                <button type="button" id="modify-btn"
-                        th:onclick="|location.href='@{/new-article?id={articleId}(articleId=${article.id})}'|"
+                <button type="button"
                         class="btn btn-primary btn-sm">수정</button>
                 <button type="button" id="delete-btn"
                         class="btn btn-secondary btn-sm">삭제</button>
+
             </article>
         </div>
     </div>
 </div>
 
 
-<script src="/js/article.js"></script>
+<script src="/article.js"></script>
 </body>

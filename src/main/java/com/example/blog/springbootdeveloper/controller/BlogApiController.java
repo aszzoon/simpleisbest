@@ -18,18 +18,15 @@ import java.util.List;
 public class BlogApiController {
 
 
-
     private final BlogService blogService;
 
     @PostMapping("/api/articles")
 
-    public ResponseEntity<Article> addArticle(@RequestBody AddArticleRequest request){
+    public ResponseEntity<Article> addArticle(@RequestBody AddArticleRequest request) {
         Article savedArticle = blogService.save(request);
 
         return ResponseEntity.status(HttpStatus.CREATED)
                 .body(savedArticle);
-
-
     }
 
     @GetMapping("/api/articles")
@@ -51,12 +48,18 @@ public class BlogApiController {
                 .body(new ArticleResponse(article));
     }
 
-    @DeleteMapping("/api/article/{id}")
+//    @DeleteMapping("/api/article/{id}")
+//    public ResponseEntity<Void> deleteArticle(@PathVariable Long id) {
+//        blogService.delete(id);
+//
+//        return ResponseEntity.ok()
+//                .build();
+//    }
+
+    @DeleteMapping("/articles/{id}")
     public ResponseEntity<Void> deleteArticle(@PathVariable Long id) {
         blogService.delete(id);
-
-        return ResponseEntity.ok()
-                .build();
+        return ResponseEntity.noContent().build();
     }
 
     @PutMapping("/api/articles/{id}")
