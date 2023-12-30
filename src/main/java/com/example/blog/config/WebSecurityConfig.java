@@ -13,12 +13,12 @@ import org.springframework.security.web.SecurityFilterChain;
 
 import static org.springframework.boot.autoconfigure.security.servlet.PathRequest.toH2Console;
 
-@RequiredArgsConstructor
-@Configuration
+@RequiredArgsConstructor // 롬복 생성 어노테이션
+@Configuration // 빈을 정의
 public class WebSecurityConfig {
-
+// 스프링 시큐리티 설정을 담당하는 클래스, 인증, 인가, 보안에 대해서 설정
     private final UserDetailService userService;
-
+    //선언된 클래스 내에서만 사용, 값이 변경 안됨, 참조하는 인스턴스, userService가 앞의 인스턴스를
     @Bean
     public WebSecurityCustomizer configure() {
         return (web) -> web.ignoring()
